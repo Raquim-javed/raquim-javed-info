@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raquim Javed Info</title>
+    <link id=pagestyle rel="stylesheet" type="text/css" href="aboutlight.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        
+        let width = window.innerWidth;
+        function myFunction(){
+        if( width < "510"){
+         document.getElementById("pagestyle").setAttribute("href","aboutlightmobile.css");
+         } 
+        }
+        myFunction(); 
+
+        let theme = document.getElementById("pagestyle").getAttribute("href");
+
+        function changetheme(){ 
+            let theme = document.getElementById("pagestyle").getAttribute("href");
+            
+            if( theme == "aboutdark.css" || theme == "aboutlight.css" ){
+                
+                colortheme();
+            }
+            else if (theme == "aboutdarkmobile.css" || theme == "aboutlightmobile.css"){
+                
+                colorthememobile();
+            }
+
+        }
+       
+        function colortheme(){
+            
+            let theme = document.getElementById("pagestyle").getAttribute("href");
+           if( theme == "aboutdark.css"){
+               document.getElementById("pagestyle").setAttribute("href","aboutlight.css");
+               document.getElementById("tx4").innerHTML="Dark Mode";
+           }
+            else if(theme == "aboutlight.css"){
+               document.getElementById("pagestyle").setAttribute("href","aboutdark.css");
+               document.getElementById("tx4").innerHTML="Light Mode";
+            }
+       }
+       function colorthememobile(){
+        let theme = document.getElementById("pagestyle").getAttribute("href");
+       
+           if( theme == "aboutdarkmobile.css"){
+               document.getElementById("pagestyle").setAttribute("href","aboutlightmobile.css");
+               document.getElementById("tx4").innerHTML="Dark Mode";
+           }
+            else if(theme == "aboutlightmobile.css"){
+               document.getElementById("pagestyle").setAttribute("href","aboutdarkmobile.css");
+               document.getElementById("tx4").innerHTML="Light Mode";
+            }
+       }
+          
+       function homepage(){
+
+        let theme = document.getElementById("pagestyle").getAttribute("href");
+           
+           if(theme == "aboutdark.css"){
+           location.href="Home.html";
+           }
+           else if(theme == "aboutlight.css"){
+            location.href="Homelight.html";
+           }
+           else if(theme == "aboutdarkmobile.css"){
+           location.href="Home.html";
+           }
+           else if(theme == "aboutlightmobile.css"){
+            location.href="Homelight.html";
+           }
+       }
+
+    </script>
+
+</head>
+<body>
+    <div id="dv1">
+        
+        <table id=tb1 >
+            <tr id=r1>
+                <td colspan="2"class=col >
+                    <textarea readonly id=tx4>Dark Mode</textarea>
+                    <button id=btn2 onclick="changetheme();"></button>
+                    <button id=btn3 onclick="changetheme();"></button>
+                    <button id=btn4 onclick="homepage();"><i id=ar1 class="fa fa-angle-double-left"></i></button>
+                    
+                   <div id=dtxh>Get Familiar With Me</div>
+                </td>
+
+            </tr>
+            <tr id=r2>
+                <td id=c1 class=col>
+                  <div id=divimage> <image id=img src=bit-removebg-preview.png></image> </div>
+                    
+
+                </td>
+                <td id=c2 class=col>
+                    <div id=dtx1>I am a computer science student and with my true passion and dedication I hope to become a full stack developer at one of the best organizations in the world.</div></br></br>
+                    <div id=dtx2><button class=b2>Skills</button></div></br>
+                    <div id=dtx3>
+                        <button class=b1>Html</button>
+                        <button class=b1>Css</button>
+                        <button class=b1>JScript</button>
+                        <button class=b1>JQuery</button>
+                        <button class=b1>Java</button>
+                        <button class=b1>C#</button>
+                        <button class=b1>MySql</button>
+                    
+                    </div></br></br>
+                    <div id=dtx4><button class=b2>Education</button></div></br>
+                    <div id=dv7></div>
+                    <div id=dv8></div>
+                    <div class=dtx5 id=dtx51><a id=a1>2018 - To Date</a></div></br>
+                    <div class=dtx6 id=dtx61>Bachelor Of Computer Science - Iqra University</div></br>
+                    <div class=dtx7 id=dtx71>Currently pursuing a Computer science degree from Iqra university-EDC campus.</div></br></br>
+                    <div id=dv9></div>
+                    <div class=dtx5 id=dtx52><a id=a1>2015 - 2017</a></div></br>
+                    <div class=dtx6 id=dtx62>HSC - Aisha Bawani College</div></br>
+                    <div class=dtx7 id=dtx72>Completed my high school from Aisha Bawani college in Pre- Engineering.</div></br></br>
+                    <div id=dv10></div>
+                    <div class=dtx5 id=dtx53><a id=a1>2004 - 2015</a></div></br>
+                    <div class=dtx6 id=dtx63>School Graduation - Karachi High School</div></br>
+                    <div class=dtx7 id=dtx73>Completed school with secondary school Certification SSC from Karachi High School.</div></br>
+                    <div id=divbtn> <button id=b3 onclick="document.getElementById('link').click();">Download Resume</button> </div>
+                </td>
+            </tr>
+        </table>
+        
+        <a id="link" href="resume-raquim.pdf" download hidden  target="_blank"></a>
+        <div id=dv4>Designed and coded by <a id=a1>Raquim Javed</a> © 2022</div>
+    </div>
+    <div id=dv2></div>
+    <div id=dv3></div>
+    <div id=dv5></div>
+    <div id=dv6></div>
+    
+    
+
+</body>
+</html>
