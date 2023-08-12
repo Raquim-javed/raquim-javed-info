@@ -27,16 +27,14 @@
            }
        }
 
-    </script>
-
- 
+    </script> 
 </head>
 <body>
 <div id=dv1>
     <textarea readonly id=tx4>Light Mode</textarea>
     <button id=btn2 onclick="colortheme();"></button>
     <button id=btn3 onclick="colortheme();"></button>
-    <div id=divimg > <image id=img src=bit-removebg-preview.png></image> </div></br></br>
+    <div id=divimg ><image id=img src=bit-removebg-preview.png></image></div></br></br>
     <div readonly id=dtx1>Hello, I am</div></br>
     <div readonly id=dtxh>Raquim Javed</div></br>
     <div readonly id=dtx2>Student web developer</div></br>
